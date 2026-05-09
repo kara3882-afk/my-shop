@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>음악힐링레크 - 음악치료 전문</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header id="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">🎵</span>
+        <div class="logo-text">
+          <strong>음악힐링레크</strong>
+          <small>Music Healing Rec</small>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">소개</a></li>
+          <li><a href="#services">프로그램</a></li>
+          <li><a href="#targets">대상기관</a></li>
+          <li><a href="#instructor">강사</a></li>
+          <li><a href="#gallery">수업갤러리</a></li>
+          <li><a href="#contact" class="btn-nav">문의하기</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="메뉴">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" onclick="closeMenu()">소개</a></li>
+        <li><a href="#services" onclick="closeMenu()">프로그램</a></li>
+        <li><a href="#targets" onclick="closeMenu()">대상기관</a></li>
+        <li><a href="#instructor" onclick="closeMenu()">강사</a></li>
+        <li><a href="#gallery" onclick="closeMenu()">수업갤러리</a></li>
+        <li><a href="#contact" onclick="closeMenu()">문의하기</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 히어로 -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">✨ 전문 음악치료 프로그램</div>
+      <h1>음악으로 치유하는<br /><span>행복한 일상여행</span></h1>
+      <p>음악치료 · 미술치료 · 브레인블럭 · 노래 · 놀이 활동으로<br />몸과 마음의 건강을 함께 돌봅니다</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">프로그램 보기</a>
+        <a href="#contact" class="btn-outline">문의하기</a>
+      </div>
+    </div>
+    <div class="hero-notes">
+      <span class="note n1">♪</span>
+      <span class="note n2">♫</span>
+      <span class="note n3">♩</span>
+      <span class="note n4">♬</span>
+      <span class="note n5">♪</span>
+    </div>
+  </section>
+
+  <!-- 소개 -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Us</span>
+        <h2>음악힐링레크란?</h2>
+        <p>음악과 예술을 통해 어르신들의 정서적·신체적·인지적 건강을 증진시키는<br />전문 음악치료 서비스입니다</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-icon">🎼</div>
+          <h3>전문 음악치료</h3>
+          <p>검증된 음악치료 프로그램으로 어르신들의 심리적 안정과 인지 기능 향상을 돕습니다</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🤝</div>
+          <h3>맞춤형 프로그램</h3>
+          <p>기관의 특성과 어르신들의 상태에 맞춘 맞춤형 프로그램을 제공합니다</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">💝</div>
+          <h3>따뜻한 돌봄</h3>
+          <p>단순한 활동을 넘어 어르신 한 분 한 분의 삶의 질 향상을 목표로 합니다</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 프로그램 -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Programs</span>
+        <h2>제공 프로그램</h2>
+        <p>다양한 치료 프로그램으로 어르신들의 전인적 건강을 지원합니다</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-color="purple">
+          <div class="service-icon-wrap purple">
+            <span>🎵</span>
+          </div>
+          <h3>음악치료</h3>
+          <p>리듬과 멜로디를 활용한 치료 활동으로 감정 표현과 심리 안정을 돕습니다. 노래 부르기, 악기 연주, 음악 감상을 통해 뇌 기능을 활성화합니다.</p>
+          <ul class="service-list">
+            <li>악기 연주 활동</li>
+            <li>노래 부르기 &amp; 합창</li>
+            <li>음악 감상 &amp; 릴렉세이션</li>
+            <li>리듬 활동</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="orange">
+          <div class="service-icon-wrap orange">
+            <span>🎨</span>
+          </div>
+          <h3>미술치료</h3>
+          <p>그림 그리기, 만들기 등 미술 활동을 통해 내면의 감정을 표현하고 창의성과 자존감을 키웁니다. 손 기능 활성화에도 효과적입니다.</p>
+          <ul class="service-list">
+            <li>수채화 &amp; 색칠 활동</li>
+            <li>콜라주 만들기</li>
+            <li>점토 &amp; 클레이 활동</li>
+            <li>계절 공예 활동</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="blue">
+          <div class="service-icon-wrap blue">
+            <span>🧠</span>
+          </div>
+          <h3>브레인블럭</h3>
+          <p>두뇌 활성화 블록 활동으로 인지 기능 향상과 치매 예방을 돕습니다. 집중력, 기억력, 공간 지각력을 자연스럽게 훈련합니다.</p>
+          <ul class="service-list">
+            <li>도형 &amp; 패턴 맞추기</li>
+            <li>색깔 분류 활동</li>
+            <li>기억력 훈련 게임</li>
+            <li>협동 블록 놀이</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="green">
+          <div class="service-icon-wrap green">
+            <span>🎤</span>
+          </div>
+          <h3>노래강사</h3>
+          <p>전문 노래 지도로 발성, 호흡, 음정을 배웁니다. 추억의 노래부터 동요까지 다양한 레퍼토리로 즐거운 노래 시간을 만들어 드립니다.</p>
+          <ul class="service-list">
+            <li>발성 &amp; 호흡 훈련</li>
+            <li>추억의 가요 &amp; 동요</li>
+            <li>합창단 운영</li>
+            <li>노래 발표회</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-color="pink">
+          <div class="service-icon-wrap pink">
+            <span>🎮</span>
+          </div>
+          <h3>놀이 활동</h3>
+          <p>신체 기능 유지와 사회적 교류를 위한 다양한 놀이 프로그램입니다. 재미있는 활동 속에서 신체 활력과 긍정적 정서를 키웁니다.</p>
+          <ul class="service-list">
+            <li>전통 놀이 (윷놀이 등)</li>
+            <li>신체 활동 게임</li>
+            <li>그룹 레크리에이션</li>
+            <li>계절 행사 활동</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-cta">
+          <div class="service-icon-wrap gold">
+            <span>✨</span>
+          </div>
+          <h3>통합 프로그램</h3>
+          <p>음악, 미술, 인지, 신체 활동을 결합한 통합적 접근으로 더욱 풍부한 치료 효과를 제공합니다.</p>
+          <a href="#contact" class="btn-service">상담 문의하기 →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 대상 기관 -->
+  <section class="targets section" id="targets">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Facilities</span>
+        <h2>방문 대상 기관</h2>
+        <p>어르신이 계신 모든 곳으로 찾아갑니다</p>
+      </div>
+      <div class="targets-grid">
+        <div class="target-card">
+          <div class="target-icon">🏛️</div>
+          <h3>복지관</h3>
+          <p>노인복지관 어르신들을 위한 정기 프로그램을 운영합니다</p>
+        </div>
+        <div class="target-card">
+          <div class="target-icon">🌞</div>
+          <h3>주간보호센터</h3>
+          <p>낮 시간 어르신들의 활기찬 하루를 음악과 함께 만들어 드립니다</p>
+        </div>
+        <div class="target-card">
+          <div class="target-icon">🏡</div>
+          <h3>요양원</h3>
+          <p>요양원 어르신들의 삶의 질 향상을 위한 맞춤 프로그램을 제공합니다</p>
+        </div>
+        <div class="target-card">
+          <div class="target-icon">🏥</div>
+          <h3>요양병원</h3>
+          <p>치료 중인 어르신들의 회복을 돕는 음악치료 프로그램을 운영합니다</p>
+        </div>
+      </div>
+      <div class="visit-banner">
+        <span>🚗</span>
+        <p><strong>직접 방문 서비스</strong> — 기관으로 찾아가는 출장 프로그램 운영 중</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 강사 소개 -->
+  <section class="instructor section" id="instructor">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Instructor</span>
+        <h2>강사 소개</h2>
+      </div>
+      <div class="instructor-card">
+        <div class="instructor-avatar">정</div>
+        <div class="instructor-info">
+          <h3>정영숙 강사</h3>
+          <p class="instructor-title">음악치료 &amp; 레크리에이션 전문</p>
+          <div class="instructor-tags">
+            <span>음악치료</span>
+            <span>미술치료</span>
+            <span>브레인블럭</span>
+            <span>노래지도</span>
+            <span>레크리에이션</span>
+          </div>
+          <p class="instructor-desc">
+            오랜 경험을 바탕으로 어르신들의 눈높이에 맞는 따뜻하고 전문적인 프로그램을 진행합니다.
+            복지관, 주간보호센터, 요양원, 요양병원 등 다양한 현장에서의 풍부한 경험으로
+            기관의 특성과 어르신들의 상태에 맞는 최적의 프로그램을 제공합니다.
+          </p>
+          <a href="tel:01026853882" class="instructor-phone">
+            📞 010-2685-3882
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 수업 갤러리 -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gallery</span>
+        <h2>수업 갤러리</h2>
+        <p>현장에서 함께하는 따뜻한 수업 모습을 담았습니다</p>
+      </div>
+
+      <!-- 동영상 탭 / 사진 탭 -->
+      <div class="gallery-tabs">
+        <button class="gtab active" onclick="switchTab('videos', this)">🎬 수업 동영상</button>
+        <button class="gtab" onclick="switchTab('photos', this)">📷 수업 사진</button>
+      </div>
+
+      <!-- 동영상 그리드 (기본 표시) -->
+      <div class="gallery-grid" id="videos">
+        <div class="video-item">
+          <video controls preload="metadata">
+            <source src="images/1.mp4" type="video/mp4" />
+          </video>
+          <p class="video-label">수업 동영상 1</p>
+        </div>
+        <div class="video-item">
+          <video controls preload="metadata">
+            <source src="images/KakaoTalk_20260502_085645540.mp4" type="video/mp4" />
+          </video>
+          <p class="video-label">수업 동영상 2</p>
+        </div>
+        <div class="video-item">
+          <video controls preload="metadata">
+            <source src="images/KakaoTalk_20260502_085652118.mp4" type="video/mp4" />
+          </video>
+          <p class="video-label">수업 동영상 3</p>
+        </div>
+        <div class="video-item">
+          <video controls preload="metadata">
+            <source src="images/KakaoTalk_20260502_085731721.mp4" type="video/mp4" />
+          </video>
+          <p class="video-label">수업 동영상 4</p>
+        </div>
+        <div class="video-item">
+          <video controls preload="metadata">
+            <source src="images/KakaoTalk_20260502_085849256.mp4" type="video/mp4" />
+          </video>
+          <p class="video-label">수업 동영상 5</p>
+        </div>
+      </div>
+
+      <!-- 사진 그리드 -->
+      <div class="gallery-grid hidden" id="photos">
+        <div class="gallery-item" onclick="openLightbox('images/KakaoTalk_20260502_085106643.jpg', 1)">
+          <img src="images/KakaoTalk_20260502_085106643.jpg" alt="수업 사진 1" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 크게 보기</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/KakaoTalk_20260502_085134973.jpg', 2)">
+          <img src="images/KakaoTalk_20260502_085134973.jpg" alt="수업 사진 2" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 크게 보기</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/KakaoTalk_20260502_085212897.jpg', 3)">
+          <img src="images/KakaoTalk_20260502_085212897.jpg" alt="수업 사진 3" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 크게 보기</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/KakaoTalk_20260502_085242945.jpg', 4)">
+          <img src="images/KakaoTalk_20260502_085242945.jpg" alt="수업 사진 4" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 크게 보기</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/2.jpg', 5)">
+          <img src="images/2.jpg" alt="수업 사진 5" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 크게 보기</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/3.jpg', 6)">
+          <img src="images/3.jpg" alt="수업 사진 6" loading="lazy" />
+          <div class="gallery-overlay"><span>🔍 크게 보기</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 라이트박스 -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lb-close" onclick="closeLightbox()">✕</button>
+    <button class="lb-prev" onclick="event.stopPropagation(); moveLightbox(-1)">&#8249;</button>
+    <img class="lb-img" id="lbImg" src="" alt="" />
+    <button class="lb-next" onclick="event.stopPropagation(); moveLightbox(1)">&#8250;</button>
+  </div>
+
+  <!-- 문의 -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2>문의하기</h2>
+        <p>프로그램 도입을 원하시는 기관은 편하게 연락 주세요</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div class="ci-body">
+              <strong>전화 문의</strong>
+              <a href="tel:01026853882">010-2685-3882</a>
+              <small>평일 09:00 ~ 18:00</small>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">👩‍🏫</div>
+            <div class="ci-body">
+              <strong>담당 강사</strong>
+              <span>정영숙</span>
+              <small>음악치료 &amp; 레크리에이션 전문</small>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">🚗</div>
+            <div class="ci-body">
+              <strong>방문 서비스</strong>
+              <span>출장 방문 가능</span>
+              <small>복지관 · 주간보호센터 · 요양원 · 요양병원</small>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+          <h3>프로그램 도입 문의</h3>
+          <div class="form-group">
+            <label>기관명 <span class="req">*</span></label>
+            <input type="text" placeholder="기관명을 입력해주세요" required />
+          </div>
+          <div class="form-group">
+            <label>담당자명 <span class="req">*</span></label>
+            <input type="text" placeholder="담당자 성함" required />
+          </div>
+          <div class="form-group">
+            <label>연락처 <span class="req">*</span></label>
+            <input type="tel" placeholder="010-0000-0000" required />
+          </div>
+          <div class="form-group">
+            <label>희망 프로그램</label>
+            <select>
+              <option value="">선택해주세요</option>
+              <option>음악치료</option>
+              <option>미술치료</option>
+              <option>브레인블럭</option>
+              <option>노래강사</option>
+              <option>놀이 활동</option>
+              <option>통합 프로그램</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>문의 내용</label>
+            <textarea placeholder="문의하실 내용을 자유롭게 적어주세요" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">문의 보내기 📨</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span>🎵</span>
+        <div>
+          <strong>음악힐링레크</strong>
+          <small>Music Healing Rec</small>
+        </div>
+      </div>
+      <div class="footer-links">
+        <p>강사: 정영숙 &nbsp;|&nbsp; <a href="tel:01026853882">010-2685-3882</a></p>
+        <p>복지관 · 주간보호센터 · 요양원 · 요양병원 방문 서비스</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 음악힐링레크. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
